@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Submit — Unspoken</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <a class="logo" href="index.html" aria-label="Unspoken home">
+    <p class="name">UNSPOKEN</p>
+    <div class="div"></div>
+    <p class="tag">ISSUE 01</p>
+  </a>
+  <div class="nav-links" id="navLinks">
+    <a href="articles.html">Articles</a>
+    <a href="about.html">About</a>
+    <a href="submit.html" class="active">Submit</a>
+  </div>
+  <a class="subscribe-btn" href="subscribe.html">Subscribe</a>
+  <button class="nav-mobile-toggle" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Menu">☰</button>
+</nav>
+
+<section>
+  <div class="submit-wrap">
+    <h1>Submit your story</h1>
+    <p>Unspoken runs on honesty, not polish. If you've got something to say about work, money, identity, or anything else our generation lives and doesn't talk about — we want to hear it. Serious tone, real specifics, no listicles.</p>
+    <form onsubmit="event.preventDefault();alert('Thanks — this is a demo form. Connect it to your email or a Google Form when you go live.');">
+      <div class="form-group"><label for="s-name">Name</label><input id="s-name" type="text" required></div>
+      <div class="form-group"><label for="s-email">Email</label><input id="s-email" type="email" required></div>
+      <div class="form-group">
+        <label for="s-topic">Topic / Pillar</label>
+        <select id="s-topic">
+          <option>Work &amp; Money</option>
+          <option>Time &amp; Milestones</option>
+          <option>Mind &amp; Self</option>
+          <option>Being Taken Seriously</option>
+          <option>Something else</option>
+        </select>
+      </div>
+      <div class="form-group"><label for="s-pitch">Your pitch or draft</label><textarea id="s-pitch" required></textarea></div>
+      <button class="submit-btn" type="submit">Submit</button>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="fl">
+    <span class="mini-logo">UNSPOKEN</span>
+    <span>© 2026 Unspoken Magazine</span>
+  </div>
+  <div class="social">
+    <a href="#">Instagram</a>
+    <a href="#">Twitter / X</a>
+    <a href="contact.html">Contact Us</a>
+  </div>
+</footer>
+
+</body>
+</html>

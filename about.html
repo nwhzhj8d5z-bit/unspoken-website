@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Unspoken</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <a class="logo" href="index.html" aria-label="Unspoken home">
+    <p class="name">UNSPOKEN</p>
+    <div class="div"></div>
+    <p class="tag">ISSUE 01</p>
+  </a>
+  <div class="nav-links" id="navLinks">
+    <a href="articles.html">Articles</a>
+    <a href="about.html" class="active">About</a>
+    <a href="submit.html">Submit</a>
+  </div>
+  <a class="subscribe-btn" href="subscribe.html">Subscribe</a>
+  <button class="nav-mobile-toggle" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Menu">☰</button>
+</nav>
+
+<section>
+  <div class="about-wrap">
+    <h1>You'll relate to this.</h1>
+    <p>Unspoken is a magazine for the things our generation lives and no one names. Not the trends, not the "5 tips" — the actual weight of it. Work that doesn't pay off the way we were told it would. Timelines that keep slipping. The quiet exhaustion of being endlessly online and still deeply alone.</p>
+    <p>We're all dealing with the same stuff and pretending we're not. This is where we stop pretending.</p>
+    <p>Unspoken is written seriously, honestly, and specifically — real stories, not generational think-pieces built on vibes. It's a safe space to speak your truth, whatever that truth is.</p>
+    <h2 style="font-family:Georgia,serif;font-style:italic;font-size:20px;font-weight:400;margin:36px 0 4px;">What we cover</h2>
+    <div class="pillars-grid">
+      <div class="pillar-card" style="border-color:var(--purple);">
+        <h3>Work &amp; Money</h3>
+        <p>The entry-level experience gap, gig-economy instability, the myth of the linear career.</p>
+      </div>
+      <div class="pillar-card" style="border-color:var(--green);">
+        <h3>Time &amp; Milestones</h3>
+        <p>Delayed independence, the disappearing "adult" timeline.</p>
+      </div>
+      <div class="pillar-card" style="border-color:var(--purple);">
+        <h3>Mind &amp; Self</h3>
+        <p>Mental health as a baseline condition, hyper-connected loneliness, identity under constant self-branding.</p>
+      </div>
+      <div class="pillar-card" style="border-color:var(--green);">
+        <h3>Being Taken Seriously</h3>
+        <p>The generational credibility gap, being dismissed by institutions built for a different economy.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="subscribe-block">
+  <h2>Get the next article in your inbox.</h2>
+  <p class="sub">Free. No spam. Just something you'll relate to.</p>
+  <form class="sub-form" onsubmit="return subscribeUser(event, this)">
+    <input type="email" name="email" placeholder="your email" required>
+    <button type="submit">Subscribe</button>
+  </form>
+</section>
+
+<footer class="site-footer">
+  <div class="fl">
+    <span class="mini-logo">UNSPOKEN</span>
+    <span>© 2026 Unspoken Magazine</span>
+  </div>
+  <div class="social">
+    <a href="#">Instagram</a>
+    <a href="#">Twitter / X</a>
+    <a href="contact.html">Contact Us</a>
+  </div>
+</footer>
+
+<script src="subscribe.js"></script>
+</body>
+</html>

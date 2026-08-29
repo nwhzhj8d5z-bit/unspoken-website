@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Article — Unspoken</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <a class="logo" href="index.html" aria-label="Unspoken home">
+    <p class="name">UNSPOKEN</p>
+    <div class="div"></div>
+    <p class="tag">ISSUE 01</p>
+  </a>
+  <div class="nav-links" id="navLinks">
+    <a href="articles.html" class="active">Articles</a>
+    <a href="about.html">About</a>
+    <a href="submit.html">Submit</a>
+  </div>
+  <a class="subscribe-btn" href="subscribe.html">Subscribe</a>
+  <button class="nav-mobile-toggle" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Menu">☰</button>
+</nav>
+
+<section>
+  <h1 class="article-page-title" style="margin-top:0;">Articles</h1>
+  <div class="filter-tabs">
+    <button class="filter-tab active">All</button>
+    <button class="filter-tab">Work &amp; Money</button>
+    <button class="filter-tab">Time &amp; Milestones</button>
+    <button class="filter-tab">Mind &amp; Self</button>
+    <button class="filter-tab">Being Taken Seriously</button>
+  </div>
+  <div class="article-grid">
+    <a class="article-card" href="article-entry-level-trap.html">
+      <div class="article-block" style="background:var(--black);"></div>
+      <p class="cat-tag cat-purple">Work &amp; Money</p>
+      <p class="article-card-title">The entry-level trap</p>
+      <p class="article-date">Issue 01</p>
+    </a>
+    <div class="article-card">
+      <div class="article-block" style="background:var(--green);"></div>
+      <p class="cat-tag cat-green">Mind &amp; Self</p>
+      <p class="article-card-title">Tired, online, alone</p>
+      <p class="article-date">Coming soon</p>
+    </div>
+    <div class="article-card">
+      <div class="article-block" style="background:var(--purple);"></div>
+      <p class="cat-tag cat-purple">Time &amp; Milestones</p>
+      <p class="article-card-title">The waiting room</p>
+      <p class="article-date">Coming soon</p>
+    </div>
+  </div>
+</section>
+
+<section class="subscribe-block">
+  <h2>Get the next article in your inbox.</h2>
+  <p class="sub">Free. No spam. Just something you'll relate to.</p>
+  <form class="sub-form" onsubmit="return subscribeUser(event, this)">
+    <input type="email" name="email" placeholder="your email" required>
+    <button type="submit">Subscribe</button>
+  </form>
+</section>
+
+<footer class="site-footer">
+  <div class="fl">
+    <span class="mini-logo">UNSPOKEN</span>
+    <span>© 2026 Unspoken Magazine</span>
+  </div>
+  <div class="social">
+    <a href="#">Instagram</a>
+    <a href="#">Twitter / X</a>
+    <a href="contact.html">Contact Us</a>
+  </div>
+</footer>
+
+<script src="subscribe.js"></script>
+</body>
+</html>

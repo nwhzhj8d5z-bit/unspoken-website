@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Entry-Level Trap — Unspoken</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <a class="logo" href="index.html" aria-label="Unspoken home">
+    <p class="name">UNSPOKEN</p>
+    <div class="div"></div>
+    <p class="tag">ISSUE 01</p>
+  </a>
+  <div class="nav-links" id="navLinks">
+    <a href="articles.html" class="active">Articles</a>
+    <a href="about.html">About</a>
+    <a href="submit.html">Submit</a>
+  </div>
+  <a class="subscribe-btn" href="subscribe.html">Subscribe</a>
+  <button class="nav-mobile-toggle" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Menu">☰</button>
+</nav>
+
+<section>
+  <div class="article-page-header">
+    <p class="cat-tag cat-purple">Work &amp; Money</p>
+    <h1 class="article-page-title">The entry-level trap</h1>
+    <p class="byline">By You · Issue 01 · 6 min read</p>
+  </div>
+  <div class="article-body">
+    <p>Three months ago, I graduated with a double degree. I had a plan: apply, interview, get hired, start building a career. I did not plan for the part where "entry-level" would turn out to be a lie.</p>
+    <p>Every job I'm qualified for on paper wants three-plus years of experience I don't have. Every internship I'm qualified for by experience wants a current student ID I don't have either. I graduated into a gap that doesn't have a name on any job posting, but I live in it every single day.</p>
+    <p class="pull-quote" style="color:var(--purple);">"We were promised a ladder. We got a locked door."</p>
+    <p>My mom doesn't believe me. Not exactly — she believes I'm trying. She just doesn't believe the door is locked. She thinks I'm not knocking hard enough. "Just go in person," she tells me. "Ask nicely. Shake someone's hand. That's how I got my first job."</p>
+    <p><em>[Continue pasting the rest of your final draft here.]</em></p>
+  </div>
+</section>
+
+<section class="related-block">
+  <p class="section-label">Related Articles</p>
+  <div class="related-grid">
+    <div class="related-card"><div class="article-block" style="background:var(--green);"></div><p>Tired, online, alone</p></div>
+    <div class="related-card"><div class="article-block" style="background:var(--purple);"></div><p>The waiting room</p></div>
+    <div class="related-card"><div class="article-block" style="background:#333;"></div><p>They stopped listening</p></div>
+  </div>
+</section>
+
+<section class="subscribe-block">
+  <h2>Get the next article in your inbox.</h2>
+  <p class="sub">Free. No spam. Just something you'll relate to.</p>
+  <form class="sub-form" onsubmit="return subscribeUser(event, this)">
+    <input type="email" name="email" placeholder="your email" required>
+    <button type="submit">Subscribe</button>
+  </form>
+</section>
+
+<footer class="site-footer">
+  <div class="fl">
+    <span class="mini-logo">UNSPOKEN</span>
+    <span>© 2026 Unspoken Magazine</span>
+  </div>
+  <div class="social">
+    <a href="#">Instagram</a>
+    <a href="#">Twitter / X</a>
+    <a href="contact.html">Contact Us</a>
+  </div>
+</footer>
+
+<script src="subscribe.js"></script>
+</body>
+</html>

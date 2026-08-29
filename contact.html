@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Unspoken</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .contact-page{max-width:480px;margin:0 auto;padding:80px 40px;text-align:center;}
+  .contact-page h1{font-family:var(--serif);font-style:italic;font-size:34px;margin:0 0 14px;font-weight:400;}
+  .contact-page p{color:var(--grey);font-size:15px;margin:0 0 28px;}
+  .contact-email{display:inline-block;font-size:16px;color:var(--purple);font-weight:600;margin-bottom:36px;}
+  .contact-form{text-align:left;}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a class="logo" href="index.html" aria-label="Unspoken home">
+    <p class="name">UNSPOKEN</p>
+    <div class="div"></div>
+    <p class="tag">ISSUE 01</p>
+  </a>
+  <div class="nav-links" id="navLinks">
+    <a href="articles.html">Articles</a>
+    <a href="about.html">About</a>
+    <a href="submit.html">Submit</a>
+  </div>
+  <a class="subscribe-btn" href="subscribe.html">Subscribe</a>
+  <button class="nav-mobile-toggle" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Menu">☰</button>
+</nav>
+
+<section class="contact-page">
+  <h1>Get in touch</h1>
+  <p>Questions, pitches, or just want to say hi — reach out below.</p>
+  <a class="contact-email" href="mailto:hello@unspokenmag.com">hello@unspokenmag.com</a>
+
+  <form class="contact-form" onsubmit="event.preventDefault();alert('Thanks — this is a demo form. Connect it to your email or backend when you go live.');">
+    <div class="form-group"><label for="c-name">Name</label><input id="c-name" type="text" required></div>
+    <div class="form-group"><label for="c-email">Email</label><input id="c-email" type="email" required></div>
+    <div class="form-group"><label for="c-message">Message</label><textarea id="c-message" required></textarea></div>
+    <button class="submit-btn" type="submit" style="width:100%;">Send</button>
+  </form>
+</section>
+
+<footer class="site-footer">
+  <div class="fl">
+    <span class="mini-logo">UNSPOKEN</span>
+    <span>© 2026 Unspoken Magazine</span>
+  </div>
+  <div class="social">
+    <a href="#">Instagram</a>
+    <a href="#">Twitter / X</a>
+    <a href="contact.html">Contact Us</a>
+  </div>
+</footer>
+
+</body>
+</html>
