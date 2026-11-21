@@ -25,33 +25,8 @@
 
 <section>
   <h1 class="article-page-title" style="margin-top:0;">Articles</h1>
-  <div class="filter-tabs">
-    <button class="filter-tab active">All</button>
-    <button class="filter-tab">Work &amp; Money</button>
-    <button class="filter-tab">Time &amp; Milestones</button>
-    <button class="filter-tab">Mind &amp; Self</button>
-    <button class="filter-tab">Being Taken Seriously</button>
-  </div>
-  <div class="article-grid">
-    <a class="article-card" href="article-entry-level-trap.html">
-      <div class="article-block" style="background:var(--black);"></div>
-      <p class="cat-tag cat-purple">Work &amp; Money</p>
-      <p class="article-card-title">The entry-level trap</p>
-      <p class="article-date">By Mariam Eltelemy</p>
-    </a>
-    <a class="article-card" href="article-when-lights-are-on.html">
-      <div class="article-block" style="background:var(--green);"></div>
-      <p class="cat-tag cat-green">Mind &amp; Self</p>
-      <p class="article-card-title">When Lights Are On, But Nobody's Home</p>
-      <p class="article-date">By Farida Younes</p>
-    </a>
-    <div class="article-card">
-      <div class="article-block" style="background:var(--purple);"></div>
-      <p class="cat-tag cat-purple">Time &amp; Milestones</p>
-      <p class="article-card-title">The waiting room</p>
-      <p class="article-date">Coming soon</p>
-    </div>
-  </div>
+  <div class="filter-tabs" id="filter-tabs"></div>
+  <div class="article-grid" id="archive-grid"></div>
 </section>
 
 <section class="subscribe-block">
@@ -75,6 +50,8 @@
   </div>
 </footer>
 
+<script src="articles.js"></script>
+<script src="site.js"></script>
 <script src="subscribe.js"></script>
 </body>
 </html>

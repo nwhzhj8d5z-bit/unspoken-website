@@ -31,41 +31,11 @@
   </div>
 </section>
 
-<section>
-  <p class="section-label">Latest Article</p>
-  <div class="featured-grid">
-    <div>
-      <p class="cat-tag cat-purple">Work &amp; Money</p>
-      <h2 class="featured-title">The entry-level trap</h2>
-      <p class="featured-desc">Why "entry-level" now means three years of experience nobody was willing to give you — and what that does to a generation waiting for its life to start.</p>
-      <a href="article-entry-level-trap.html" class="read-now">Read now →</a>
-    </div>
-    <div class="quote-box"><p>"We were promised a ladder. We got a locked door."</p></div>
-  </div>
-</section>
+<section id="featured"></section>
 
 <section>
   <p class="section-label">More Articles</p>
-  <div class="article-grid">
-    <a class="article-card" href="article-when-lights-are-on.html">
-      <div class="article-block" style="background:var(--green);"></div>
-      <p class="cat-tag cat-green">Mind &amp; Self</p>
-      <p class="article-card-title">When Lights Are On, But Nobody's Home</p>
-      <p class="article-date">By Farida Younes</p>
-    </a>
-    <a class="article-card" href="articles.html">
-      <div class="article-block" style="background:var(--purple);"></div>
-      <p class="cat-tag cat-purple">Time &amp; Milestones</p>
-      <p class="article-card-title">The waiting room</p>
-      <p class="article-date">Coming soon</p>
-    </a>
-    <a class="article-card" href="articles.html">
-      <div class="article-block" style="background:var(--black);"></div>
-      <p class="cat-tag cat-grey">Being Taken Seriously</p>
-      <p class="article-card-title">They stopped listening</p>
-      <p class="article-date">Coming soon</p>
-    </a>
-  </div>
+  <div class="article-grid" id="more-grid"></div>
 </section>
 
 <section class="subscribe-block">
@@ -92,6 +62,8 @@
 <script>
 document.querySelectorAll('.nav-links a').forEach(a=>{ if(a.getAttribute('href')==='index.html') a.classList.add('active'); });
 </script>
+<script src="articles.js"></script>
+<script src="site.js"></script>
 <script src="subscribe.js"></script>
 </body>
 </html>
