@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Entry-Level Trap — Unspoken</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <a class="logo" href="index.html" aria-label="Unspoken home">
+    <p class="name">UNSPOKEN</p>
+    <div class="div"></div>
+    <p class="tag">ISSUE 01</p>
+  </a>
+  <div class="nav-links" id="navLinks">
+    <a href="articles.html" class="active">Articles</a>
+    <a href="about.html">About</a>
+    <a href="submit.html">Submit</a>
+  </div>
+  <a class="subscribe-btn" href="subscribe.html">Subscribe</a>
+  <button class="nav-mobile-toggle" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Menu">☰</button>
+</nav>
+
+<section>
+  <div class="article-page-header">
+    <p class="cat-tag cat-purple">Work &amp; Money</p>
+    <h1 class="article-page-title">The Entry-Level Trap</h1>
+    <p class="byline">By Mariam Eltelemy · 3 min read</p>
+  </div>
+  <div class="article-hero" id="article-hero" data-slug="entry-level-trap"></div>
+  <div class="article-body">
+    <p>Three months ago, I graduated with a double degree. I had a plan: apply, interview, get hired, start building a career. I did not plan for the part where "entry-level" would turn out to be a lie.</p>
+    <p>Every job I'm qualified for on paper wants three-plus years of experience I don't have. Every internship I'm qualified for by experience wants a current student ID I don't have either. I graduated into a gap that doesn't have a name on any job posting, but I live in it every single day. Somewhere between "student" and "professional," there's a door that's supposed to open. Nobody mentioned it would be locked.</p>
+    <p>My mom doesn't believe me. Not exactly — she believes I'm trying. She just doesn't believe the door is locked. She thinks I'm not knocking hard enough. "Just go in person," she tells me. "Ask nicely. Shake someone's hand. That's how I got my first job." And she's not wrong, not about her own life. That's exactly how it worked for her. She walked into a building, spoke to a person, and walked out with a future.</p>
+    <p>I don't know how to tell her that building doesn't work that way anymore. That the person she'd shake hands with has been replaced by an applicant tracking system that filters out my resume before a human ever sees it. That "entry-level" isn't a starting line anymore — it's a gate, and the key is an experience I was never given a way to get. I didn't fail to knock. I knocked two hundred times. The building itself changed the locks and forgot to tell anyone my age.</p>
+    <p>This isn't really a story about job hunting. It's a story about being disbelieved. About sitting across from someone who loves you, trying to explain a system they never had to survive, and watching them hear "I'm struggling" as "I'm not trying." That gap — between what they experienced and what we're experiencing — is its own kind of loneliness. It's not that older generations don't care. It's that the evidence of their own lives tells them a different story than the one we're actually living, and evidence is hard to argue with, even when it's outdated.</p>
+    <p class="pull-quote" style="color:var(--purple);">"I didn't fail to knock. I knocked two hundred times."</p>
+    <p>So here's what nobody put on the job posting: entry-level, now, often means having already done the job somewhere else, for free or for less, until you'd technically qualify for a beginning that keeps moving further away. It means watching internships — the one bridge that used to exist — close themselves to you the moment you're no longer enrolled, as if the diploma didn't just cost four years and tens of thousands of dollars, but also disqualified you from the one thing that might have used it. It means doing everything you were told to do, in order, on schedule, and discovering that the schedule was never actually connected to the outcome.</p>
+    <p>I'm not writing this because I want sympathy. I'm writing it because I'm tired of being the only one who seems to know this is happening to me, and I have to believe I'm not actually the only one — I'm just one of many people quietly assuming it's a personal failure instead of a structural one. That's the trap inside the trap: not just that the jobs don't exist at the level we were promised, but that we're taught to internalize the absence as evidence of something wrong with us, rather than something wrong with the ladder.</p>
+    <p>I don't have a tidy ending here. I still don't have a job. My mom and I still don't agree on why. But I know this: the confusion in her voice when she doesn't understand why "just applying" isn't working — that confusion is real, and it's not cruelty, it's a generation gap wide enough to swallow a labor market whole. And the exhaustion I feel explaining it, again, for what feels like the hundredth time — that's real too.</p>
+    <p>Maybe the point of naming this isn't to fix it today. Maybe it's just to say it out loud, clearly, once: this isn't a lack of effort. It's a system that quietly moved the entry point and left an entire generation standing at a door that used to open.</p>
+    <p>If you're standing there too — you'll relate to this. That's kind of the whole point.</p>
+  </div>
+</section>
+
+<section class="related-block">
+  <p class="section-label">Related Articles</p>
+  <div class="related-grid" id="related-grid" data-current="entry-level-trap"></div>
+</section>
+
+<section class="subscribe-block">
+  <h2>Get the next article in your inbox.</h2>
+  <p class="sub">Free. No spam. Just something you'll relate to.</p>
+  <form class="sub-form" onsubmit="return subscribeUser(event, this)">
+    <input type="email" name="email" placeholder="your email" required>
+    <button type="submit">Subscribe</button>
+  </form>
+</section>
+
+<footer class="site-footer">
+  <div class="fl">
+    <span class="mini-logo">UNSPOKEN</span>
+    <span>© 2026 Unspoken Magazine</span>
+  </div>
+  <div class="social">
+    <a href="#">Instagram</a>
+    <a href="#">Twitter / X</a>
+    <a href="contact.html">Contact Us</a>
+  </div>
+</footer>
+
+<script src="articles.js"></script>
+<script src="site.js"></script>
+<script src="subscribe.js"></script>
+</body>
+</html>

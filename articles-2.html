@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Article — Unspoken</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <a class="logo" href="index.html" aria-label="Unspoken home">
+    <p class="name">UNSPOKEN</p>
+    <div class="div"></div>
+    <p class="tag">ISSUE 01</p>
+  </a>
+  <div class="nav-links" id="navLinks">
+    <a href="articles.html" class="active">Articles</a>
+    <a href="about.html">About</a>
+    <a href="submit.html">Submit</a>
+  </div>
+  <a class="subscribe-btn" href="subscribe.html">Subscribe</a>
+  <button class="nav-mobile-toggle" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Menu">☰</button>
+</nav>
+
+<section>
+  <h1 class="article-page-title" style="margin-top:0;">Articles</h1>
+  <div class="filter-tabs" id="filter-tabs"></div>
+  <div class="article-grid" id="archive-grid"></div>
+</section>
+
+<section class="subscribe-block">
+  <h2>Get the next article in your inbox.</h2>
+  <p class="sub">Free. No spam. Just something you'll relate to.</p>
+  <form class="sub-form" onsubmit="return subscribeUser(event, this)">
+    <input type="email" name="email" placeholder="your email" required>
+    <button type="submit">Subscribe</button>
+  </form>
+</section>
+
+<footer class="site-footer">
+  <div class="fl">
+    <span class="mini-logo">UNSPOKEN</span>
+    <span>© 2026 Unspoken Magazine</span>
+  </div>
+  <div class="social">
+    <a href="#">Instagram</a>
+    <a href="#">Twitter / X</a>
+    <a href="contact.html">Contact Us</a>
+  </div>
+</footer>
+
+<script src="articles.js"></script>
+<script src="site.js"></script>
+<script src="subscribe.js"></script>
+</body>
+</html>
